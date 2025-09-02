@@ -1,0 +1,32 @@
+{
+	"is_aa_config": true,
+	"version": "0.0.0.1",
+
+	"aa": {
+		"identifier_list": [
+		        "@order.downloaded",
+		        "@order.paid",
+		        "@order.confirmed",
+		        "@order.days",
+		        "@order.deleted",
+		        "@order.combined",
+		        "@order.splitted",
+		        "@order.modified",
+		        "@order.modified_ef",
+		        "@status.set",
+		        "@status.days",
+		        "@document.fv_added",
+		        "@document.fv_sent",
+		        "@document.fk_added",
+		        "@document.fk_sent",
+		        "@document.pa_added",
+		        "@document.pa_sent",
+		        "@products.added",
+		        "@products.deleted",
+		        "@products.modified",
+		        "@stock.out",
+		        "@stock.below",
+		        "@event.custom"
+		]
+	}
+}

@@ -1,0 +1,23 @@
+{
+    "title": "ITer Actions scheme",
+    "author": "Krzysztof Wojcik 2025",
+    "actions": [
+        {
+            "id": 1,
+            "title": "My new Action",
+            "description": "blah blah blah",
+            "rules": [ /* Warunki, składnia JS + dodatkowe funkcje */
+                "order.country=='PL'",
+                "order.city.contains('G')"
+            ],
+            "triggers": [ /* Wyzwalacze (nazwy systemowe) */
+                "@order.created",
+                "@order.modified"
+            ],
+            "steps": [ /* Kroki do wykonania, składnia JS */
+                "order.confirmed=true",
+                "order.status=2324442"
+            ] /* Z założenia możliwe zdefiniowanie własnych funkcji JS z panelu admina */
+        }
+    ]
+}

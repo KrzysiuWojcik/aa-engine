@@ -1,0 +1,15 @@
+{
+	"actions": [
+		{
+			"trigger": "@order.created",
+			"rules": [
+				"order.status_id == 13131",
+				"order.email contains '@example.pl'"
+			],
+			"sets": {
+				"order.status_id": "13133",
+				"order.email": "{{ order.extra_field_2 }}"
+			}
+		}
+	]
+}
